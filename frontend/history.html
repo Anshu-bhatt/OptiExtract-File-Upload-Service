@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File History - File Upload Service</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navigation">
+        <a href="index.html" class="nav-link">Upload File</a>
+        <a href="history.html" class="nav-link active">File History</a>
+    </nav>
+
+    <div class="container">
+        <h1>File Upload History</h1>
+        <p class="description">View all uploaded files and their metadata.</p>
+        
+        <div id="loading" class="loading">Loading files...</div>
+        <div id="error" class="error"></div>
+        
+        <div id="fileTableContainer" class="table-container">
+            <table id="fileTable" class="file-table">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Original Filename</th>
+                        <th>File Size</th>
+                        <th>Uploaded At</th>
+                    </tr>
+                </thead>
+                <tbody id="fileTableBody">
+                    <!-- File records will be inserted here -->
+                </tbody>
+            </table>
+        </div>
+        
+        <div id="noFiles" class="no-files" style="display: none;">
+            No files uploaded yet. <a href="index.html">Upload your first file</a>.
+        </div>
+    </div>
+
+    <script src="history.js"></script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File Upload Service</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navigation">
+        <a href="index.html" class="nav-link active">Upload File</a>
+        <a href="history.html" class="nav-link">File History</a>
+    </nav>
+
+    <div class="container">
+        <h1>Upload a File</h1>
+        <p class="description">Select any file (PDF, image, text, etc.) to upload to the server.</p>
+        
+        <div class="upload-section">
+            <input type="file" id="fileInput" class="file-input">
+            <button id="uploadBtn" class="upload-btn">Upload File</button>
+        </div>
+        
+        <div id="status" class="status"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
